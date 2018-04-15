@@ -1,7 +1,7 @@
 node {
     def app
     stage('Checkout') {
-        scm checkount
+        scm checkout
     }
     stage('Build') {
         app = docker.build("alexzimmer/jenkins-withdocker")
